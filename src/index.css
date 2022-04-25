@@ -7,3 +7,23 @@ body {
   color: white;
   font-family: 'Poppins', sans-serif;
 }
+
+.bottom-card {
+  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+.animate-float {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
