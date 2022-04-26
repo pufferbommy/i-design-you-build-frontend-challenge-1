@@ -1,9 +1,15 @@
-import { sun } from '../assets'
+import { sun, menu } from '../assets'
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-end mt-10 gap-20">
-      <div className="flex text-xl font-bold gap-10">
+    <nav className="flex justify-between lg:justify-end mt-10 gap-20 px-[30px] lg:px-0">
+      {/* for mobile */}
+      <div className="lg:hidden font-bold text-5xl">Xae</div>
+      <div className="lg:hidden p-2 cursor-pointer">
+        <img src={menu} alt="menu" />
+      </div>
+      {/* for screen */}
+      <div className="hidden lg:flex text-xl font-bold gap-10">
         <a
           className="decoration-transparent hover:decoration-white underline underline-offset-8 transition-colors duration-300 ease-out decoration-4"
           href="#"
@@ -29,7 +35,7 @@ const Navbar = () => {
           Contact
         </a>
       </div>
-      <div className="mr-10 group cursor-pointer">
+      <div className="hidden lg:block mr-10 group cursor-pointer">
         <img
           className="transition-transform group-hover:scale-110"
           src={sun}

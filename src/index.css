@@ -6,6 +6,7 @@ body {
   background-image: linear-gradient(to right, #2c4550, #0c0c0c);
   color: white;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
 .bottom-card {

@@ -2,7 +2,7 @@ import { facebook, instagram, twitter } from '../assets'
 
 const Aside = () => {
   return (
-    <aside className="min-w-[161px] h-full flex flex-col items-center border-r justify-between">
+    <aside className="hidden min-w-[161px] h-full lg:flex flex-col items-center border-r justify-between">
       <div className="font-bold mt-6 text-5xl">Xae</div>
       <div className="flex flex-col items-center mb-[52px] gap-[38px]">
         <a className="group" href="#">
