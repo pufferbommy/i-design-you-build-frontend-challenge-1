@@ -1,11 +1,16 @@
 import { sun, menu } from '../assets'
+import { useAppContext } from '../App'
 
 const Navbar = () => {
+  const { showMenu, setShowMenu } = useAppContext()
   return (
     <nav className="flex justify-between lg:justify-end mt-10 gap-20 px-[30px] lg:px-0">
       {/* for mobile */}
       <div className="lg:hidden font-bold text-5xl">Xae</div>
-      <div className="lg:hidden p-2 cursor-pointer">
+      <div
+        onClick={() => setShowMenu(!showMenu)}
+        className="lg:hidden p-2 cursor-pointer"
+      >
         <img src={menu} alt="menu" />
       </div>
       {/* for screen */}
